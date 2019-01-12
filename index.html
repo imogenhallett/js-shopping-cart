@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Puglife</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Karla" rel="stylesheet">
+	<script src="js/shopping.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+	<script src="js/ratings.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<h1>puglife</h1>
+		</div>
+		<div class="content">
+			<nav>
+				<div class="search nav-item">
+					<div class="search-title">
+						<form>
+							<input type="text" name="search-bar" id="search-bar" value="Search">
+						</form>
+						<i class="fas fa-search"></i></div>
+					<i class="fas fa-search"></i>
+				</div>
+				<div id="icon-shopping-cart" class="shopping nav-item">
+					<i class="fas fa-shopping-cart"></i>
+					<div id="items-count" class="items-count">0</div>
+				</div>
+				<div class="menu nav-item">
+					<i class="fas fa-bars"></i>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="left"></section>
+		<section class="content">
+			<img src="img/products/moon-rock.png" class="product" alt="Moon Rock" />
+			<div class="item-description">
+				<ul class="breadcrumbs no-list">
+					<li>Rocks <i class="fas fa-caret-right"></i></li>
+					<li>Moon <i class="fas fa-caret-right"></i></li>
+					<li class="active">Rare</li>
+				</ul>
+				<h2>Moonrock from <br/>Apollo Expedition</h2>
+				<div id="rating" class="rating">
+					<div id="rating-stars" class="rating-stars">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+					</div>
+					<span class="rating-info"><span id="current-rating">4.60</span>/5.0</span>
+					<span class="votes rating-info"><span id="current-votes">18</span> votes</span>
+				</div>
+				<ul class="price no-list">
+					<li>$59.99</li>
+					<li class="price-correction">$69.99</li>
+				</ul>
+				
+				<p class="item-description">Collected by the United States Apollo program manned lunar landings from 1969 to 1972</p>
+				
+				<div class="shopping">
+					<div class="shopping-items-number">
+						<p>QUANTITY</p>
+						<div class="items-number-picker-wrap">
+							<div class="items-number-picker ">
+								<i id="decrease-items" class="fas fa-minus"></i>
+								<span id="items-to-add">3</span>
+								<i id="increase-items" class="fas fa-plus"></i>
+							</div>
+						</div>
+						<div class="wish-list">
+							<i class="far fa-heart"></i>
+							<span>Save to Wishlist</span>
+						</div>
+						
+						<div id="add-to-cart" class="add-to-cart">
+							Add to cart
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div id="overlay" class="overlay">
+		<div class="cell">
+			<div class="shopping-contents">
+				<h2>Your Cart</h2>
+				<p id="no-items" class="no-items">You have no items in your cart</p>
+				<table id="cart-contents" class="cart-contents">
+					<tr>
+						<td><img src="img/products/moon-rock-thumb.png" alt="Moonrock" /></td>
+						<td>Moonrock from Apollo Expedition</td>
+						<td id="cart-contents-total-items"></td>
+						<td id="cart-contents-total-price"></td>
+						<td id="empty-cart" class="empty-cart"><i class="fas fa-trash-alt"></i></td>
+					</tr>
+				</table>
+				<div id="continue-shopping" class="continue-shopping">Continue Shopping</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

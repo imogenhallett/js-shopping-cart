@@ -1,0 +1,7 @@
+@mixin txt-logo($sizeValue:1.6) {
+	font-size: $sizeValue+rem;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 2px;
+	margin: 0;
+	color: $txt-puglife-logo;
+}
